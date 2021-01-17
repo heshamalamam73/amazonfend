@@ -1,15 +1,12 @@
-import Head from 'next/head'
-import Layout from '../components/layout/Layout'
-import styles from '../styles/Home.module.css'
-import Header from '../components/header/Header'
-import { useEffect } from 'react'
-import Offerta from '../components/offerta/Offerta'
+import Layout from "../components/layout/Layout";
+import styles from "../styles/Home.module.css";
+import Header from "../components/header/Header";
+import { useEffect } from "react";
+import Offerta from "../components/offerta/Offerta";
 import Sidebar from "../components/sidebar/Sidebar";
 import Shipping from "../components/shipping/Shipping";
 
 export default function Home({ countries }) {
-
-
   return (
     <Layout title="Amazon" countries={countries}>
       <div className={styles.main} id="app">
@@ -549,7 +546,6 @@ export default function Home({ countries }) {
       </div>
     </Layout>
   );
-
 }
 export const getStaticProps = async () => {
   const res = await fetch("https://restcountries.eu/rest/v2/all");
