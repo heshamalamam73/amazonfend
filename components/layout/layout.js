@@ -10,7 +10,7 @@ import SearchList from "../searchList/SearchList";
 import Shipping from "../shipping/Shipping";
 // import PublicIcon from '@material-ui/icons/Public';
 
-function Layout({ children, title = "Ilmondo", countries }) {
+const Layout = ({ children, title = "Ilmondo", countries }) => {
   const handleHideSideBar = (e) => {
     e.preventDefault();
     const app = document.getElementById("allapp");
@@ -38,6 +38,6 @@ function Layout({ children, title = "Ilmondo", countries }) {
       </div>
     </>
   );
-}
+};
 
 export default Layout;
