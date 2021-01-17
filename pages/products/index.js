@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
-import Layout from "../../components/layout/layout";
-import styles from './Online.module.css'
-import Link from 'next/link'
+import Layout from "../../components/layout/Layout";
+import styles from "./Online.module.css";
+import Link from "next/link";
 import LeftNav from "../../components/leftnav/LeftNav";
 import ProductsList from "../../components/productsList/ProductsList";
 import SearchList from "../../components/searchList/SearchList";
@@ -20,22 +20,17 @@ function Index({ countries, title }) {
     input.addEventListener("input", function () {
       setKeyword(this.value.toLowerCase());
     });
-
   }, []);
   const handleChange = function (e) {
     if (e.target.checked) {
-          setKeyword(e.target.value.toLowerCase());
-
+      setKeyword(e.target.value.toLowerCase());
     } else {
-      setKeyword("")
+      setKeyword("");
     }
-
-      
-    };;
+  };
   return (
     <Layout countries={countries}>
       <div className={styles.online_container}>
-
         <div className={styles.online_top}>
           <div className={styles.online_top_img}>
             <img
@@ -75,13 +70,13 @@ function Index({ countries, title }) {
 }
 
 export const getStaticProps = async () => {
-    const res = await fetch("https://restcountries.eu/rest/v2/all")
-    const countries = await res.json();
-    return {
-        props: {
-            countries
-        }
-    }
-}
+  const res = await fetch("https://restcountries.eu/rest/v2/all");
+  const countries = await res.json();
+  return {
+    props: {
+      countries,
+    },
+  };
+};
 
 export default Index;

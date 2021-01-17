@@ -1,8 +1,8 @@
 /** @format */
 import { useEffect, useState } from "react";
 import generateProducts from "../../seeds/products";
-import Layout from '../../components/layout/layout'
-import styles from './Novita.module.css'
+import Layout from "../../components/layout/Layout";
+import styles from "./Novita.module.css";
 import LeftNav from "../../components/leftnav/LeftNav";
 import ProductsList from "../../components/productsList/ProductsList";
 function Novita({ countries, title }) {
@@ -15,7 +15,7 @@ function Novita({ countries, title }) {
     }
   };
   return (
-    <Layout countries={countries} >
+    <Layout countries={countries}>
       <div className={styles.container}>
         <div className={styles.head_titles}>
           <div className={styles.head_item}>Bestseller</div>
@@ -39,7 +39,7 @@ function Novita({ countries, title }) {
     </Layout>
   );
 }
-// will edit this and pass come props 
+// will edit this and pass come props
 export const getStaticProps = async () => {
   const res = await fetch("https://restcountries.eu/rest/v2/all");
   const countries = await res.json();
