@@ -8,15 +8,15 @@ import Sidebar from "../sidebar/Sidebar";
 import SignList from "../signList/SignList";
 import SearchList from "../searchList/SearchList";
 import Shipping from "../shipping/Shipping";
-// import PublicIcon from '@material-ui/icons/Public';
+import PublicIcon from "@material-ui/icons/Public";
 
-// const handleHideSideBar = (e) => {
-//   e.preventDefault();
-//   const app = document.getElementById("allapp");
-//   const side_bar = document.getElementById("side-bar");
-//   side_bar.style.marginLeft = "-280px";
-//   app.classList.remove("disactive");
-// };
+const handleHideSideBar = (e) => {
+  e.preventDefault();
+  const app = document.getElementById("allapp");
+  const side_bar = document.getElementById("side-bar");
+  side_bar.style.marginLeft = "-280px";
+  app.classList.remove("disactive");
+};
 
 const Layout = ({ children, title = "Ilmondo", countries }) => (
   <>
