@@ -1,4 +1,4 @@
-import Layout from "../../../components/layout/Layout";
+import Layout from "../../../components/layout/layout.js";
 import styles from "./Order.module.css";
 import Link from "next/link";
 import Same from "../../../components/same/Same";

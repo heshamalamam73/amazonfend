@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import Layout from "../../components/Layout/Layout";
+import Layout from "../../components/layout/layout.js";
 import styles from "./product.module.css";
 import Link from "next/link";
 import ShoppingCartIcon from "@material-ui/icons/ShoppingCart";

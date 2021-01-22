@@ -1,4 +1,4 @@
-import Layout from "../components/Layout/Layout";
+import Layout from "../components/layout/layout.js";
 import styles from "../styles/Home.module.css";
 import Offerta from "../components/offerta/Offerta";
 
