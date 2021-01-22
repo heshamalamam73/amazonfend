@@ -7,8 +7,10 @@ function Shipping() {
   useEffect(() => {
     const btn = document.getElementById("address");
     btn.addEventListener("mouseenter", function () {
-      document.getElementById("shipAdd").style.display = "block";
-      document.getElementById("allapp").classList.add("disactive");
+      setTimeout(() => {
+        document.getElementById("shipAdd").style.display = "block";
+        document.getElementById("allapp").classList.add("disactive");
+      }, 1000);
     });
     document.getElementById("allapp").addEventListener("click", function () {
       document.getElementById("shipAdd").style.display = "none";

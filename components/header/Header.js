@@ -6,7 +6,7 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import SearchBar from "../searchbar/SearchBar";
 
-function Header({ countries }) {
+function Header() {
   const [keyword, setKeyword] = useState("");
   useEffect(() => {
     const input = document.getElementById("input");
@@ -20,12 +20,17 @@ function Header({ countries }) {
     });
 
     signbtn.addEventListener("mouseenter", function () {
-      signlist.style.display = "block";
-      app.classList.add("disactive");
+      setTimeout(() => {
+        signlist.style.display = "block";
+        app.classList.add("disactive");
+      }, 1000);
     });
+
     signlist.addEventListener("mouseleave", function () {
-      signlist.style.display = "none";
-      app.classList.remove("disactive");
+      setTimeout(() => {
+        signlist.style.display = "none";
+        app.classList.remove("disactive");
+      }, 1000);
     });
   }, []);
   const handleLeftNaf = (e) => {

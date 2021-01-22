@@ -6,7 +6,7 @@
 }
 
 .box {
-    height: 400px;
+    height: 350px;
     border: 1px solid #eee;
     display: flex;
     flex-direction: column;
@@ -16,9 +16,17 @@
 }
 
 .box_img {
-    min-height: 200px;
+    min-height: 150px;
+    max-height: 100%;
+
 }
 
+.box_img img{
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: cover;
+
+}
 .box_body {
     padding: 10px;
 }

@@ -30,7 +30,7 @@ function Index({ countries, title }) {
     }
   };
   return (
-    <Layout countries={countries}>
+    <Layout>
       <div className={styles.online_container}>
         <div className={styles.online_top}>
           <div className={styles.online_top_img}>

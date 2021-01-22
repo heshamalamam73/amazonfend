@@ -15,7 +15,7 @@ function Novita({ countries, title }) {
     }
   };
   return (
-    <Layout countries={countries}>
+    <Layout>
       <div className={styles.container}>
         <div className={styles.head_titles}>
           <div className={styles.head_item}>Bestseller</div>
@@ -30,7 +30,7 @@ function Novita({ countries, title }) {
           </div>
         </div>
         <div className={styles.body_grid_2}>
-          <div className={styles.body_grid_2}>
+          <div className={styles.filter_list}>
             <LeftNav countries={countries} handleChange={handleChange} />
           </div>
           <ProductsList products={countries} />

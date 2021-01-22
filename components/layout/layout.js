@@ -17,7 +17,7 @@ const handleHideSideBar = (e) => {
   app.classList.remove("disactive");
 };
 
-const Layout = ({ children, title = "Ilmondo", countries }) => (
+const Layout = ({ children, title = "Amazon" }) => (
   <>
     <SignList />
     <Sidebar />

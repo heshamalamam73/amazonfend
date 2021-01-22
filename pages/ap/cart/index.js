@@ -7,7 +7,7 @@ function Cart(props) {
   const [empaty, setEmpaty] = useState(false);
 
   return (
-    <Layout>
+    <Layout title="Cart">
       <div className={styles.container}>
         <div className={styles.grid_2}>
           <div>

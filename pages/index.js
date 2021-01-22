@@ -4,7 +4,7 @@ import Offerta from "../components/offerta/Offerta";
 
 export default function Home({ countries }) {
   return (
-    <Layout title="Amazon" countries={countries}>
+    <Layout title="Amazon">
       <div className={styles.main} id="app">
         <div className={styles.first_container}>
           <div className={styles.first_container_head}>
