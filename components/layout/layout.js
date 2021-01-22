@@ -1,6 +1,6 @@
 /** @format */
 
-import styles from "./layout.module.css";
+import styles from "./Layout.module.css";
 import Head from "next/head";
 import Header from "../header/Header";
 import Footer from "../footer/Footer";

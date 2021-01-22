@@ -1,7 +1,7 @@
 /** @format */
 import { useEffect, useState } from "react";
 import generateProducts from "../../seeds/products";
-import Layout from "../../components/layout/Layout";
+import Layout from "../../components/Layout/Layout";
 import styles from "./Novita.module.css";
 import LeftNav from "../../components/leftnav/LeftNav";
 import ProductsList from "../../components/productsList/ProductsList";

@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import Layout from "../../components/layout/Layout";
+import Layout from "../../components/Layout/Layout";
 import styles from "./Online.module.css";
 import Link from "next/link";
 import LeftNav from "../../components/leftnav/LeftNav";

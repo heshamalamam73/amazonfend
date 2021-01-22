@@ -1,5 +1,5 @@
 import styles from "./Cart.module.css";
-import Layout from "../../../components/layout/Layout";
+import Layout from "../../../components/Layout/Layout";
 import { useState } from "react";
 import Same from "../../../components/same/Same";
 
