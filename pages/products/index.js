@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import Layout from "../../components/layout/layout.js";
-import styles from "./Online.module.css";
+import styles from "./products.module.css";
+
 import Link from "next/link";
 import LeftNav from "../../components/leftnav/LeftNav";
 import ProductsList from "../../components/productsList/ProductsList";
