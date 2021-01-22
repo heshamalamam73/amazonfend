@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 import SearchList from "../searchList/SearchList";
-import styles from "./searchBar.module.css";
+import styles from "./SearchBar.module.css";
 function SearchBar({ countries }) {
   return (
     <>
