@@ -32,3 +32,10 @@
 .search_item:focus {
     background-color: #ff9400;
 }
+@media(max-width : 1200px){
+    .container{
+        width: 100%;
+        left: 0;
+        right: 0;
+    }
+}

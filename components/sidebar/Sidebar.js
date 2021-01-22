@@ -1,5 +1,6 @@
 /** @format */
 import styles from "./Sidebar.module.css";
+import Link from "next/link";
 function Sidebar(props) {
   const handleClose = (e) => {
     e.preventDefault();
@@ -11,7 +12,9 @@ function Sidebar(props) {
   return (
     <div id="side-bar" className={styles.container}>
       <div className={styles.nav_head}>
-        <div>ciao hesham !</div>
+        <div>
+          <Link href="/ap/login">ciao ..... !</Link>
+        </div>
         <div>
           <button id="colse-btn" onClick={handleClose}>
             X
