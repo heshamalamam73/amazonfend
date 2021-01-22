@@ -1,6 +1,5 @@
 /** @format */
 
-import styles from "./Layout.module.css";
 import Head from "next/head";
 import Header from "../header/Header";
 import Footer from "../footer/Footer";
@@ -25,14 +24,12 @@ const Layout = ({ children, title = "Ilmondo", countries }) => (
     <SearchList />
     <Shipping />
 
-    <div className={styles.container} id="allapp">
+    <div id="allapp">
       <Head>
         <title>{title} </title>
       </Head>
       <Header />
-      <div className={styles.main} onClick={handleHideSideBar}>
-        {children}
-      </div>
+      <div onClick={handleHideSideBar}>{children}</div>
       <Footer />
     </div>
   </>
