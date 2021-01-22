@@ -18,7 +18,22 @@ function Header() {
     input.addEventListener("input", function () {
       setKeyword(this.value.toLowerCase());
     });
-
+    // input.addEventListener("input", () => {
+    //   const nav = document.getElementById("header");
+    //   const cart = document.getElementById("cart");
+    //   const logo = document.getElementById("logo");
+    //   cart.style.display = "none";
+    //   logo.style.display = "none";
+    //   nav.classList.add("full_input");
+    // });
+    // app.addEventListener("click", () => {
+    //   const nav = document.getElementById("header");
+    //   const cart = document.getElementById("cart");
+    //   const logo = document.getElementById("logo");
+    //   cart.style.display = "block";
+    //   logo.style.display = "block";
+    //   nav.classList.remove("full_input");
+    // });
     signbtn.addEventListener("mouseenter", function () {
       setTimeout(() => {
         signlist.style.display = "block";
@@ -44,9 +59,9 @@ function Header() {
 
   return (
     <div>
-      <div className={styles.header}>
+      <div className={styles.header} id="header">
         <Link href="/">
-          <div className={styles.logo}>
+          <div className={styles.logo} id="logo">
             <img src="../logo.svg" alt="" />
           </div>
         </Link>
@@ -83,7 +98,7 @@ function Header() {
             <Link href="/ap/order"> resi e ordini </Link>
           </a>
         </div>
-        <div className={styles.nav_item}>
+        <div className={styles.nav_item} id="cart">
           {" "}
           <Link href="/ap/cart">
             <a>

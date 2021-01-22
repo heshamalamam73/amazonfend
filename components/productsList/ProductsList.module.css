@@ -66,6 +66,8 @@
     .body_grid_2 {
         grid-template-columns: 1fr;
     }
+ 
+
 
 }
 @media (max-width:720px) {
@@ -76,16 +78,16 @@
         grid-template-columns: 1fr;
     }
 
+
 }
 @media (max-width:556px) {
     .body_grid_4 {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(1, 1fr);
     }
 
     .body_grid_2 {
         grid-template-columns: 1fr;
     }
 
- 
 
 }

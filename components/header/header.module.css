@@ -30,11 +30,17 @@
   margin: 0;
   color: wheat;
 }
-
+.logo {
+  max-width: 100px;
+  padding: 0%;
+  margin: 0%;
+}
 .header_input {
+  width: 100%;
   display: grid;
   grid-template-columns: auto 1fr auto;
 }
+
 .header_input button {
   height: 100%;
   border: none;
@@ -44,6 +50,10 @@
   padding: 2px 20px;
   background-color: #ff9400;
   outline: none;
+}
+
+.header_input input {
+  max-width: 100%;
 }
 
 .select {
@@ -64,9 +74,11 @@
   text-decoration: none;
   text-decoration: none !important;
 }
+
 .header_input input {
+  display: block;
   border: none;
-  width: 100%;
+    max-width: 100%;
   height: 100%;
   padding: 10px;
   outline-color: #ff9400;
@@ -81,6 +93,7 @@
   align-items: center;
   align-content: center;
 }
+
 
 .top_nav div {
   text-align: center;
@@ -133,23 +146,21 @@
   .header {
     grid-template-columns: 1fr 6fr 1fr;
   }
-
+  .full_input{
+     grid-template-columns: 100% ;
+  }
   .header div:nth-child(2) {
     display: none;
   }
-
   .header div:nth-child(4) {
     display: none;
   }
-
   .header div:nth-child(5) {
     display: none;
   }
-
   .header_input {
     grid-template-columns: 1fr auto;
   }
-
   .select {
     display: none;
   }

@@ -61,7 +61,7 @@
     }
     @media (max-width:920px) {
         .filter_list{
-display: none;
+        display: none;
         }
         .body_grid_4 {
             grid-template-columns: repeat(3, 1fr);
@@ -69,6 +69,10 @@ display: none;
     
         .body_grid_2 {
             grid-template-columns: 1fr;
+        }
+        .h1{
+            font-size: 25px;
+            padding-right: 10px;
         }
     
     }
@@ -93,7 +97,7 @@ display: none;
     }
     @media (max-width:556px) {
         .body_grid_4 {
-            grid-template-columns: repeat(2, 1fr);
+            grid-template-columns: 1fr;
         }
     
         .body_grid_2 {

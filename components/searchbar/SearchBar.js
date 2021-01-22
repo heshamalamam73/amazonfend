@@ -2,14 +2,19 @@
 
 import { useEffect, useState } from "react";
 import SearchList from "../searchList/SearchList";
-
+import styles from "./searchBar.module.css";
 function SearchBar({ countries }) {
   return (
     <>
-      <input type="text" placeholder="Search" id="input" autoComplete="false" />
+      <input
+        className={styles.SearchBar}
+        type="text"
+        placeholder="Search"
+        id="input"
+        autoComplete="false"
+      />
     </>
   );
 }
-
 
 export default SearchBar;
