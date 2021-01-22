@@ -57,10 +57,12 @@ function Index({ countries, title }) {
                 </div>
               </div>
               <div className={styles.body_grid_2}>
-                <div className={styles.body_grid_2}>
+                <div className={styles.filter_list}>
                   <LeftNav countries={countries} handleChange={handleChange} />
                 </div>
-                <ProductsList products={filterdCountries} />
+                <div className={styles.body_grid_4}>
+                  <ProductsList products={filterdCountries} />
+                </div>
               </div>
             </section>
           </div>
