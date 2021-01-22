@@ -10,34 +10,32 @@ import SearchList from "../searchList/SearchList";
 import Shipping from "../shipping/Shipping";
 // import PublicIcon from '@material-ui/icons/Public';
 
-const Layout = ({ children, title = "Ilmondo", countries }) => {
-  const handleHideSideBar = (e) => {
-    e.preventDefault();
-    const app = document.getElementById("allapp");
-    const side_bar = document.getElementById("side-bar");
-    side_bar.style.marginLeft = "-280px";
-    app.classList.remove("disactive");
-  };
+// const handleHideSideBar = (e) => {
+//   e.preventDefault();
+//   const app = document.getElementById("allapp");
+//   const side_bar = document.getElementById("side-bar");
+//   side_bar.style.marginLeft = "-280px";
+//   app.classList.remove("disactive");
+// };
 
-  return (
-    <>
-      <SignList />
-      <Sidebar />
-      <SearchList />
-      <Shipping />
+const Layout = ({ children, title = "Ilmondo", countries }) => (
+  <>
+    <SignList />
+    <Sidebar />
+    <SearchList />
+    <Shipping />
 
-      <div className={styles.container} id="allapp">
-        <Head>
-          <title>{title} </title>
-        </Head>
-        <Header />
-        <div className={styles.main} onClick={handleHideSideBar}>
-          {children}
-        </div>
-        <Footer />
+    <div className={styles.container} id="allapp">
+      <Head>
+        <title>{title} </title>
+      </Head>
+      <Header />
+      <div className={styles.main} onClick={handleHideSideBar}>
+        {children}
       </div>
-    </>
-  );
-};
+      <Footer />
+    </div>
+  </>
+);
 
 export default Layout;
